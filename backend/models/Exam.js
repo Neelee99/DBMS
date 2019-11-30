@@ -1,20 +1,22 @@
 const Sequelize = require('sequelize');
 const db = require('../config/database')
 
-const Student = db.define('student' ,{
-    Name : {
+const Exam = db.define("exam" ,{
+    e_id : {
         type:Sequelize.STRING
     },
-    RegNo :{
+    e_name :{
         type:Sequelize.STRING
     },
-    Password:{
+    c_id:{
+        type:Sequelize.STRING
+    },
+    e_syllabus:{
         type:Sequelize.STRING
     }
+
     
 
-},{
-    tableName : 'student'
 })
 
-module.exports = Student;
+module.exports = Exam;

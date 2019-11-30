@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
 import 'login/login.dart';
+import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'dart:convert';
+
 
 class SplashScreen extends StatelessWidget {
 
-  static TextStyle style = TextStyle(fontSize: 30.0,);
+  
+ static TextStyle style = TextStyle(fontSize: 30.0,);
   //making list of pages needed to pass in IntroViewsFlutter constructor.
+
   final pages = [
     PageViewModel(
         pageColor: const Color(0xFF03A9F4),

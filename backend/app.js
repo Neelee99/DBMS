@@ -18,7 +18,8 @@ db.authenticate().then(()=>console.log('Database connected'))
 
 app.get('/',(req,res)=> res.send('INDEX'));
 
-app.use('/student', require('./routes/gigs'));
-const PORT = process.env.PORT || 5000;
+app.use('/courses', require('./routes/gigs'));
+app.use('/exams', require('./routes/exam'));
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, console.log(`Server running`));

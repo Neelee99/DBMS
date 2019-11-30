@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-module.exports = new Sequelize('appli','root','root',{
+module.exports = new Sequelize('dbms','root','root',{
     host:'localhost',
     dialect:'mariadb',
     operatorsAliases:false,

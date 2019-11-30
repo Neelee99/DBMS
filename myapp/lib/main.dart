@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/login/register.dart';
+import 'package:myapp/trial.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: RegisterScreen(),
+      home: HomePage(),
     );
   }
 }
